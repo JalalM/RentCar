@@ -5,3 +5,6 @@ class Car:
 		self.Model = model
 		self.Year = year
 		self.Rented = rented
+		
+	def rent(self):
+		self.Rented = True
