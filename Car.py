@@ -8,3 +8,6 @@ class Car:
 		
 	def rent(self):
 		self.Rented = True
+		
+	def rented():
+		return Rented
