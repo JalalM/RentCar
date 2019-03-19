@@ -10,4 +10,4 @@ class Car:
 		self.Rented = True
 		
 	def rented(self):
-		return Rented
+		return self.Rented
