@@ -11,3 +11,6 @@ class Car:
 		
 	def rented(self):
 		return self.Rented
+	
+	def restore(self):
+		self.Rented = False
