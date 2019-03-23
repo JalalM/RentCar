@@ -1,8 +1,9 @@
 from Car import Car
-cars = []
+cars = {}
 id = 0
 while True:
 	print("Enter 1 to Add a Car")
+	print("Enter 2 to Delete a Car")
 	
 	s = input()
 	if (s == 1):
@@ -12,4 +13,10 @@ while True:
 		m = raw_input()
 		print("Enter car year")
 		y = input()
-		cars.append(Car(++id,t,m,y))
+		cars[id] = Car(id,t,m,y)
+		id += 1
+	elif (s == 2):
+		print("Enter car ID")
+		i = input()
+		del cars[i]
+		
