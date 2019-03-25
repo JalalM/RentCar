@@ -5,6 +5,7 @@ while True:
 	print("Enter 1 to Add a Car")
 	print("Enter 2 to Delete a Car")
 	print("Enter 3 to Rent a Car")
+	print("Enter 4 to Restore a Car")
 	
 	s = input()
 	if (s == 1):
@@ -30,4 +31,13 @@ while True:
 		else:
 			cars[i].rent()
 			print("The car is rented successfully")
+			
+	elif (s == 4):
+		print("Enter car ID")
+		i = input()
+		if (cars[i].rented()):
+			cars[i].restore()
+			print("The Car is restored successfully")
+		else:
+			print("The car is already restored")
 		
